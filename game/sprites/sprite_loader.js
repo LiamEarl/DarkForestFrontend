@@ -7,7 +7,6 @@ export class Loader {
 
     async load() {
         const assetList = [
-            'hexmap.png',
             'spacebackground.png',
             'Planet1.png',
             'Planet2.png',
