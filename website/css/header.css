@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    overflow: overflow;
+    background-color: rgba(48, 48, 61, 0.808);
+    width: 100%;
+    height: 100px;
+    
+    border-bottom: 2px solid black;
+}
+.header h1 {
+    padding-left: 25px;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 23px;
+}
+.header img {
+    width: 55px;
+}
+.header p {  
+    margin-left: 25px;
+    animation-name: rainbow;
+    animation-iteration-count: infinite; 
+    animation-duration: 4s;
+}
+@keyframes rainbow {
+    0%{
+        color: rgb(255, 255, 0);
+    }
+    25%{
+        color: rgb(255, 255, 255);
+    }
+    50%{
+        color: rgb(255, 0, 0);
+    }
+    75%{
+        color: rgb(51, 0, 255);
+    }
+    100%{
+        color: rgb(255, 255, 0);
+    }
+}

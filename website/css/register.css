@@ -7,42 +7,6 @@ body {
     background-size: cover;
     font-family: Orbitron;
 }
-.header {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    overflow: overflow;
-    background-color: #ff000085;
-    padding: 20px 30px;
-    margin: 0px 0px;
-}
-.header h1 {
-    float: left;
-    color: black;
-    text-shadow: rgb(255, 255, 255) 1px 1px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 23px;
-}
-.header img {
-    width: 55px;
-}
-.header p {  
-    animation-name: rainbow;
-    animation-iteration-count: infinite; 
-    animation-duration: 4s;
-}
-@keyframes rainbow {
-    0%{
-        color: rgb(0, 0, 0);
-    }
-    50%{
-        color: rgb(255, 255, 255);
-    }
-    100%{
-        color: rgb(0, 0, 0);
-    }
-}
 .inputs {
     text-align: center;
     justify-content: center;
@@ -67,31 +31,45 @@ body {
     font-size: 16px;
 }
 #registerButton {
-    border: solid black 2px;
-    margin: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: white 1px 1px;
+    font-weight: bolder;
+    background-color: rgba(255, 0, 0, 0.573);
+    width: 130px;
     font-family: Orbitron;
-    padding: 5px 10px;
-    width: 100px;
+    font-size: 15px;
+    margin: 10px 10px;
+    padding: 8px;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 5px;
+    transition: 0.3s;
 }
 #registerButton:hover {
     scale: 1.02;
-    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    cursor:pointer;
 }
 #registerButton:active {
     transform: scale(0.93);
 }
 button {
-    border-radius: 5px;
-    border: solid black 2px;
-    margin: 10px;
+    color: rgb(0, 0, 0);
+    text-shadow: white 1px 1px;
+    font-weight: bolder;
+    background-color: rgba(255, 0, 0, 0.573);
+    width: 130px;
     font-family: Orbitron;
-    padding: 5px 10px;
-    width: 100px;
+    font-size: 15px;
+    margin: 10px 10px;
+    padding: 8px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.3s;
 }
 button:hover {
     scale: 1.02;
-    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    cursor:pointer;
 }
 button:active {
     transform: scale(0.93);
