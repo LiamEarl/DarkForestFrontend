@@ -10,7 +10,7 @@ body {
 .inputs {
     text-align: center;
     justify-content: center;
-    color: red;
+    color: rgb(255, 255, 255);
     text-shadow: rgb(0, 0, 0) 2px 3px;
 }
 .inputs form {
@@ -31,45 +31,40 @@ body {
     font-size: 16px;
 }
 #registerButton {
-    color: rgb(0, 0, 0);
-    text-shadow: white 1px 1px;
-    font-weight: bolder;
-    background-color: rgba(255, 0, 0, 0.573);
-    width: 130px;
+    margin-top: 10px;
     font-family: Orbitron;
-    font-size: 15px;
-    margin: 10px 10px;
-    padding: 8px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    transition: 0.3s;
+    font-size: 16px;
+    background-color: rgba(48, 48, 61, 0.8);
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.2s;
 }
 #registerButton:hover {
     scale: 1.02;
-    background-color: rgb(255, 0, 0);
-    cursor:pointer;
+    cursor: pointer;
+    background-color: rgb(65, 65, 81);
 }
 #registerButton:active {
     transform: scale(0.93);
 }
 button {
-    color: rgb(0, 0, 0);
-    text-shadow: white 1px 1px;
-    font-weight: bolder;
-    background-color: rgba(255, 0, 0, 0.573);
-    width: 130px;
     font-family: Orbitron;
-    font-size: 15px;
-    margin: 10px 10px;
-    padding: 8px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
-    transition: 0.3s;
+    font-size: 16px;
+    background-color: rgba(48, 48, 61, 0.8);
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 2px 2px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.2s;
 }
 button:hover {
     scale: 1.02;
-    background-color: rgb(255, 0, 0);
-    cursor:pointer;
+    cursor: pointer;
+    background-color: rgb(65, 65, 81);
 }
 button:active {
     transform: scale(0.93);

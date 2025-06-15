@@ -10,8 +10,9 @@
     </head>
     <body>
         <div class="header">
-            <h1>Dark Forest</h1>
+            <h1 onclick="window.location.href='index.html'">Dark Forest</h1>
             <p id="comment">Clever comment loading. . . </p>
+            <p class="time">5:34PM Earth ST 1/16/2159</p>
         </div>
         <div class="inputs">
             <h1>Register To Play</h1>
@@ -24,6 +25,7 @@
                 <input type="email" id="email" maxlength="35" placeholder="johndoe@gmail.com" name="lname"><br>
                 <input id="registerButton" type="submit" value="Register">
             </form>
+            <p id="statusmessage"></p>
             <p>Already have an account?</p>
             <button>Login</button>
             <button onclick="window.location.href='index.html'">Home</button>
