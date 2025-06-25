@@ -8,8 +8,8 @@ body, html {
     align-items: center;
     background-color: rgba(48, 48, 61, 0.808);
     width: 100vw;
-    height: clamp(10vh, 15vh, 20vh);
-    border-bottom: 2px solid black;
+    height: clamp(100px, 15vh, 150px);
+    border-bottom: clamp(2px, 0.3vw, 6px) solid black;
 }
 .header h1 {
     min-width: fit-content;
@@ -18,7 +18,7 @@ body, html {
     text-shadow: rgb(0, 0, 0) 2px 2px;
     text-align: center;
     text-decoration: none;
-    font-size: clamp(20px, 3vw, 40px);
+    font-size: clamp(20px, 3vw, 35px);
 }
 .header h1:hover {
     scale: 1.01;
@@ -28,8 +28,9 @@ body, html {
     width: 55px;
 }
 .header .time {
-    font-size: clamp(15px, 2.5vw, 25px);
+    font-size: clamp(15px, 2.5vw, 22px);
     text-align: center;
+    padding-right: clamp(10px, 20px, 30px);
     color: yellow;
     text-shadow: black 2px 2px;
 }

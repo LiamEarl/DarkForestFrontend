@@ -15,22 +15,22 @@
             <p class="time">5:34PM Earth ST 1/16/2159</p>
         </div>
         <div class="inputs">
-            <h1>Register To Play</h1>
-            <form id="registerForm">
+            <h1>Account Log In</h1>
+            <form id="loginForm">
                 <label for="username">Username:</label><br>
                 <input type="text" maxlength="15" id="username" placeholder="JohnTheDoe" name="username"><br>
                 <label for="password">Password:</label><br>
                 <input type="password" maxlength="30" placeholder="Enter A Password" id="password" name="password"><br>
                 <!--<label for="email">Email:</label><br>
                 <input type="email" id="email" maxlength="35" placeholder="johndoe@gmail.com" name="email"><br>-->
-                <input id="submitButton" type="submit" value="Register">
+                <input id="submitButton" type="submit" value="Login">
             </form>
             <p id="statusmessage"></p>
-            <p>Already have an account?</p>
-            <button onclick="window.location.href='login.html'">Login</button>
+            <p>Don't have an account?</p>
+            <button onclick="window.location.href='register.html'">Register</button>
             <button onclick="window.location.href='index.html'">Home</button>
         </div>
         <script src="../js/headerbackground.js"></script>
-        <script src="../js/register.js"></script>
+        <script src="../js/login.js"></script>
     </body>
 </html>

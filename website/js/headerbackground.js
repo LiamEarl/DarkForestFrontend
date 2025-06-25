@@ -1,15 +1,24 @@
 const imageStyles = [
-    "url('public/assets/Menu1.jpg')",
-    "url('public/assets/Menu2.jpg')",
-    "url('public/assets/Menu3.jpg')",
-    "url('public/assets/Menu4.jpg')",
-    "url('public/assets/Menu5.jpg')",
-    "url('public/assets/Menu6.jpg')",
-    "url('public/assets/Menu7.jpg')"
+    "Menu1.jpg",
+    "Menu2.jpg",
+    "Menu3.jpg",
+    "Menu4.jpg",
+    "Menu5.jpg",
+    "Menu6.jpg",
+    "Menu7.jpg"
 ];
-document.addEventListener('DOMContentLoaded', function() {
-    const imgStyle = imageStyles[Math.floor(Math.random() * 7)];
-    document.body.style.backgroundImage = imgStyle;
+const imgStyle = imageStyles[Math.floor(Math.random() * imageStyles.length)];
+
+document.body.style.backgroundImage = "url('../../public/assets/".concat(imgStyle).concat("')");
     
-    document.getElementById
-});
+const comments = [
+    "The best thing since sliced bread!",
+    "Now with extra Uranium.",
+    "13.7 Billion years in development!",
+    "Enjoy the lag  :}",
+    "Hmmm... I smell genocide.",
+    "We take no responsibility for any war crimes.",
+    "WARNING: Goth Mommies Within."
+];
+const comment = comments[Math.floor(Math.random() * comments.length)];
+document.getElementById("comment").textContent = comment;

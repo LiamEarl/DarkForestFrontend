@@ -30,7 +30,7 @@ body {
     text-shadow: rgb(0, 0, 0) 1px 1px;
     font-size: 16px;
 }
-#registerButton {
+#submitButton {
     margin-top: 10px;
     font-family: Orbitron;
     font-size: 16px;
@@ -42,7 +42,7 @@ body {
     padding: 10px;
     transition: 0.2s;
 }
-#registerButton:hover {
+#submitButton:hover {
     scale: 1.02;
     cursor: pointer;
     background-color: rgb(65, 65, 81);

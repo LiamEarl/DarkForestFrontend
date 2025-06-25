@@ -14,12 +14,23 @@
             <p id="comment">Clever comment loading. . . </p>
             <p class="time">5:34PM Earth ST 1/16/2159</p>
         </div>
-        <div class="buttons">
+
+        <div class="menu">
+            
+            <div class="account">
+                <p id="accountstatus">Status: logged out</p>
+                <div class="myaccount">
+                    <img id="profileimage" src="../../public/assets/loggedOut.png"/>
+                    <button id="login" onclick="window.location.href='login.html'">Login</button>
+                <button id="logout">Logout</button>
+                </div>
+            </div>
+        
             <button onclick="window.location.href='creategame.html'">Create Game</button>
-            <button>Join Game</button>
-            <button>Tutorial</button>
-            <button>My Account</button>
+            <button onclick = "window.location.href='joingame.html'">Join Game</button>
+            <!--<button>Tutorial</button>-->
         </div>
         <script src="../js/headerbackground.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
