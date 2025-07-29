@@ -9,8 +9,10 @@ const bonusText = document.getElementById("empirebonus");
 const startButton = document.getElementById("startbutton");
 const playerList = document.getElementById("playerlist");
 const menu = document.getElementById("menu");
-
-document.getElementById("leave").hidden = true;
+const copyButton = document.getElementById("copycode");
+const copiedMessage = document.getElementById("copiedmessage");
+copiedMessage.hidden = true;
+document.getElementById("leavehome").hidden = true;
 
 const bonusDescriptions = {
   "human": "Humans may trade credits for any other resource at a 2:1 ratio, instead of 3:1.",
@@ -45,7 +47,7 @@ function generateCode(numChars) {
 }
 
 function updateUserList(userList) {
-    playerList.innerHTML = "";
+    playerList.innerHTML = "<label>Players:</label>";
     for(var i = 0; i < userList.length; i++) {
         playerList.innerHTML +=`<p>${userList[i].username}</p>`;
     }
@@ -102,7 +104,7 @@ setInterval(() => {
     }).catch((e) => {
         console.log(e);
     });
-}, 3000);
+}, 5000);
 
 selectEmpireType.addEventListener('change', function () {
     bonusText.textContent = bonusDescriptions[this.value];     
@@ -138,3 +140,11 @@ startButton.addEventListener("click", () => {
         statusMessage.style.color = "red";
     });
 }); 
+
+copyButton.addEventListener("click", () => {
+    copiedMessage.hidden = false; 
+    navigator.clipboard.writeText(gameCode);
+    setTimeout(() => {
+        copiedMessage.hidden = true;
+    }, 5000) 
+});

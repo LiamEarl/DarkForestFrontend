@@ -33,11 +33,7 @@ joinButton.addEventListener("click", (event) => {
         statusMessage.style.color = "green";
         setTimeout(() => {
             window.location.href = "creategame.html?code=".concat(gameCode); 
-        }, 1500);
-        
-    }).then((userList) => {
-        if(userList == null) return;
-        updateUserList(userList);
+        }, 1500);     
     }).catch((e) => {
         console.log(e);
     });

@@ -16,20 +16,23 @@
         </div>
         
         <p id="startstatus"></p>
-        <a id="leave" href="index.html">back home</a>
+        <p id="leavehome" onclick="window.location.href='index.html'">Back Home</p>
         <div id="menu">  
             <div class="buttons">
                 <button onclick="window.location.href='index.html'">← Home</button>
-                <button id="startbutton">Start Game</button>
+                <button id="startbutton">Start</button>
             </div>
             <div class="gamedetails">
                 <div class = "server">
                     <div class="code">
                         <label>Game Code:</label>
                         <p id="gamecode">PL4C3H0LD3R</p>
+                        <div class="copy">
+                            <button id="copycode">Copy</button>
+                            <p id="copiedmessage">Copied!</p>
+                        </div>
                     </div>
-                    <div id="playerlist" class="player-details">
-                        <label>Players:</label>
+                    <div id="playerlist" class="player-details">  
                     </div>
                 </div>
                 

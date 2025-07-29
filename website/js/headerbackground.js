@@ -13,12 +13,16 @@ document.body.style.backgroundImage = "url('../../public/assets/".concat(imgStyl
     
 const comments = [
     "The best thing since sliced bread!",
-    "Now with extra Uranium.",
+    "Now with enriched Uranium!",
     "13.7 Billion years in development!",
-    "Enjoy the lag  :}",
-    "Hmmm... I smell genocide.",
+    "Enjoy the lag :}",
+    "I smell WAR.",
     "We take no responsibility for any war crimes.",
-    "WARNING: Goth Mommies Within."
+    "WARNING: Game lies within.",
+    "Peace is not an option. At least... not a good one.",
+    "Definitely not inspired by Stellaris.",
+    "Real Talk: DO NOT REUSE PASSWORDS BETWEEN SITES AND APPLICATIONS!",
+    "Loading a clever comment...",
 ];
 const comment = comments[Math.floor(Math.random() * comments.length)];
 document.getElementById("comment").textContent = comment;

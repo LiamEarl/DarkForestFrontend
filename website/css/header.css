@@ -9,7 +9,7 @@ body, html {
     background-color: rgba(48, 48, 61, 0.808);
     width: 100vw;
     height: clamp(100px, 15vh, 150px);
-    border-bottom: clamp(2px, 0.3vw, 6px) solid black;
+    border-bottom: clamp(2px, 0.3vw, 6px) solid rgb(61, 68, 91);
 }
 .header h1 {
     min-width: fit-content;
@@ -18,7 +18,7 @@ body, html {
     text-shadow: rgb(0, 0, 0) 2px 2px;
     text-align: center;
     text-decoration: none;
-    font-size: clamp(20px, 3vw, 35px);
+    font-size: clamp(20px, 3vw, 25px);
 }
 .header h1:hover {
     scale: 1.01;
@@ -37,26 +37,23 @@ body, html {
 #comment {  
     text-align: center;
     min-width: 160px;
-    font-size: clamp(15px, 2.5vw, 25px);
+    font-size: clamp(15px, 2.5vw, 20px);
     margin-left: 25px;
     animation-name: rainbow;
     animation-iteration-count: infinite; 
-    animation-duration: 4s;
+    animation-duration: 3s;
 }
 @keyframes rainbow {
     0%{
-        color: rgb(255, 255, 0);
+        color: rgb(255, 255, 255);
     }
-    25%{
-        color: rgb(22, 255, 1);
-    }
-    50%{
+    33%{
         color: rgb(255, 0, 0);
     }
-    75%{
+    66%{
         color: rgb(51, 0, 255);
     }
     100%{
-        color: rgb(255, 255, 0);
+        color: rgb(255, 255, 255);
     }
 }
