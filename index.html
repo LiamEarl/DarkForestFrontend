@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Dark Forest</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+        <link rel="stylesheet" href="../css/styles.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="navigate" data-page="home">Dark Forest</h1>
+            <p id="comment">Clever comment loading. . . </p>
+            <p class="time">5:34PM Earth ST 1/16/2159</p>
+        </div>
+
+        <main>
+            <div id="home" class="page">
+                <div class="homemenu">
+                    <div class="account">
+                        <p id="accountstatus">Status: logged out</p>
+                        <div class="myaccount">
+                            <img id="profileimage" src="../../public/assets/websiteAssets/loggedOut.png"/>
+                            <button class="navigate" id="login" data-page="login">Login</button>
+                        <button id="logout">Logout</button>
+                        </div>
+                    </div>
+                
+                    <button class="navigate" data-page="creategame">Create Game</button>
+                    <button class="navigate" data-page="joingame">Join Game</button>
+                </div>
+            </div>
+            <div id="login" class="page">
+                <div class="inputs">
+                    <h1>Account Log In</h1>
+                    <form id="loginForm">
+                        <label for="lusername">Username:</label><br>
+                        <input type="text" maxlength="15" id="lusername" placeholder="JohnTheDoe" name="lusername"><br>
+                        <label for="lpassword">Password:</label><br>
+                        <input type="password" maxlength="30" placeholder="Enter A Password" id="lpassword" name="lpassword"><br>
+                        <!--<label for="email">Email:</label><br>
+                        <input type="email" id="email" maxlength="35" placeholder="johndoe@gmail.com" name="email"><br>-->
+                        <input id="lsubmitButton" type="submit" value="Login">
+                    </form>
+                    <p id="lstatusmessage"></p>
+                    <p>Don't have an account?</p>
+                    <button class="navigate" data-page="register">Register</button>
+                    <button class="navigate" data-page="home">Home</button>
+                </div>
+            </div>
+            <div id="register" class="page">
+                <div class="inputs">
+                    <h1>Register To Play</h1>
+                    <form id="registerForm">
+                        <label for="username">Username:</label><br>
+                        <input type="text" maxlength="15" id="username" placeholder="JohnTheDoe" name="username"><br>
+                        <label for="password">Password:</label><br>
+                        <input type="password" maxlength="30" placeholder="Enter A Password" id="password" name="password"><br>
+                        <!--<label for="email">Email:</label><br>
+                        <input type="email" id="email" maxlength="35" placeholder="johndoe@gmail.com" name="email"><br>-->
+                        <input id="submitButton" type="submit" value="Register">
+                    </form>
+                    <p id="statusmessage"></p>
+                    <p>Already have an account?</p>
+                    <button class="navigate" data-page="login">Login</button>
+                    <button class="navigate" data-page="home">Home</button>
+                </div>
+            </div>
+            <div id="creategame" class="page">
+               
+                <p id="startstatus"></p>
+                <p id="leavehome" class="navigate" data-page="home">Back Home</p>
+                <div id="menu">  
+                    <div class="buttons">
+                        <button class="navigate" data-page="home">Back</button>
+                        <button id="startbutton">Start</button>
+                    </div>
+                    <div class="gamedetails">
+                        <div class = "server">
+                            <div class="code">
+                                <label>Game Code:</label>
+                                <p id="gamecode">PL4C3H0LD3R</p>
+                                <div class="copy">
+                                    <button id="copycode">Copy</button>
+                                    <p id="copiedmessage">Copied!</p>
+                                </div>
+                            </div>
+                            <div id="playerlist" class="player-details">  
+                            </div>
+                        </div>
+                        
+                        <div class="empiredetails">
+                            <div class="empiretype">
+                                <label for="empires">Pick Your Empire:</label>
+                                <div class="empire">
+                                    <select name="empires" id="selecttype">
+                                        <option value="human">Human</option>
+                                        <option value="hive mind">Hive Mind</option>
+                                        <option value="machine">Machine</option>
+                                    </select>
+                                    <img id="empireicon" src="../../public/assets/empireIcons/HumanIcon.png"/>
+                                </div>
+                            </div>
+                            <div class="bonuses">
+                                <label>Empire Bonuses</label>
+                                <p id="empirebonus">Humans may trade credits for any other resource at a 2:1 ratio, instead of 3:1.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="joingame" class="page">
+                <div class="menu">
+                    <h1>Enter Game Code:</h1>
+                    <input type="text" oninput="this.value = this.value.toUpperCase()" maxlength="9" id="gamecode" placeholder="ABCDE1234" name="gamecode">
+                    <button id="joinbutton">Join</button>
+                    <p id="statusmessage"></p>
+                </div>
+            </div>
+            <div id="play" class="page">
+
+            </div>
+        </main>
+
+        <script type="module" src="js/website_scripts/manage_pages.js"></script>
+    </body>
+</html>
